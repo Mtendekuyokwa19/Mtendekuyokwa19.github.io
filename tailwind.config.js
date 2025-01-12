@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         JetBrains: ['JetBrains Mono', 'sans-serif'],
         Quicksand: ['Quicksand', 'sans-serif']
+        , Serif: ['DM Serif Text', 'sans-serif']
+        , Alfa: ['Alfa Slab One', 'sans-serif']
+
       }
     },
     colors: {

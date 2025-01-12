@@ -13,13 +13,13 @@ export const Navbar = () => {
   )
 }
 function HeaderMenu() {
-  return (<div className="flex w-full bg-catNav  p-6 justify-evenly dark:bg-everNav ">
+  return (<div className="flex w-full bg-catNav  p-4 justify-evenly dark:bg-everNav ">
     <Avatar />
+    <div className="flex font-JetBrains font-bold gap-8 relative right-11 justify-center items-center">
+      <p className="text-lg">Blog</p>
+      <p className="text-lg">Lists</p>
 
-    <div className="flex font-Quicksand font-bold gap-8 justify-center items-center">
-      <p>Blog</p>
-      <p>About</p>
-      <p>Lists</p>
+      <p className="text-lg">About</p>
     </div>
 
     <div className="flex gap-4 justify-center items-center">
@@ -37,9 +37,9 @@ function Githubbtn() {
 
     <a href="https://github.com/Mtendekuyokwa19">
 
-      <button>
+      <button className="flex justify-center items-center">
 
-        <IoLogoGithub size={25} />
+        <IoLogoGithub size={30} />
 
 
       </button>
@@ -51,22 +51,16 @@ function Githubbtn() {
 function Avatar() {
   return (
     <div className="flex justify-center items-center gap-2">
-      <div className="">
-        <img src="/header.jpg" className="rounded-full w-13 flex justify-center items-center h-12 bg-red-600" alt="mypfp" />
+      {/* <div className=""> */}
+      {/*   <img src="/header.jpg" className="rounded-full w-10 flex justify-center items-center h-9 bg-red-600" alt="mypfp" /> */}
+      {/**/}
+      {/* </div> */}
 
-      </div>
-      <div className="flex  font-JetBrains justify-center text-emerald-700 dark:text-headerGreen items-center text-xl h-full font-bold ">
+      <div className="flex justify-center items-baseline gap-1">
+        <p className="font-Alfa text-2xl">Mtende</p>
 
+        <div className="font-Alfa rounded-full bg-green-700 w-2 h-2 text-2xl"></div>
 
-        <p>~</p>
-
-        <p>/</p>
-        <p>mtende</p>
-        <p>/</p>
-        <div className="mx-1">
-
-          {/* <span className="animate-ping bg-black w-1 h-1 text-black ">|</span> */}
-        </div>
       </div>
     </div>
   )
