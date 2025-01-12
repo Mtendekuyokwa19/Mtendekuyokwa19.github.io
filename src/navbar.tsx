@@ -5,14 +5,15 @@ import { Outlet } from "react-router"
 
 export const Navbar = () => {
   return (
-    <div className="bg-slate-200  dark:text-white dark:bg-everNav dark:text-everNavText      h-16 flex w-screen items-center">
+    <div className="gap-7  h-full dark:text-everNavText dark:bg-everbg      flex flex-col  w-screen items-center">
       <HeaderMenu />
+
       <Outlet />
     </div>
   )
 }
 function HeaderMenu() {
-  return (<div className="flex w-full justify-evenly">
+  return (<div className="flex w-full bg-slate-200 p-6 justify-evenly dark:bg-everNav ">
     <Avatar />
 
     <div className="flex font-Quicksand font-bold gap-8 justify-center items-center">
@@ -33,10 +34,16 @@ function HeaderMenu() {
 
 function Githubbtn() {
   return (
-    <button>
 
-      <a href=""><IoLogoGithub size={25} /></a>
-    </button>
+    <a href="https://github.com/Mtendekuyokwa19">
+
+      <button>
+
+        <IoLogoGithub size={25} />
+
+
+      </button>
+    </a>
   )
 
 }

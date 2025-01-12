@@ -6,6 +6,9 @@ import { router } from './route.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <div className='overflow-x-hidden'>
+      <RouterProvider router={router} />
+
+    </div>
   </StrictMode>,
 )
