@@ -5,7 +5,10 @@ export const router = createBrowserRouter([
 
   {
     path: "/",
-    element: <Navbar />
+    element: <Navbar />,
+    children: [
+      { index: true, element: <Home /> }
+    ]
   }
 
 ])
