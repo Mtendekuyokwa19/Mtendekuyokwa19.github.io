@@ -5,7 +5,7 @@ import { Outlet } from "react-router"
 
 export const Navbar = () => {
   return (
-    <div className="gap-7  h-full dark:text-everNavText dark:bg-everbg      flex flex-col  w-screen items-center">
+    <div className="gap-7 bg-catwhite   h-full dark:text-everNavText dark:bg-everbg      flex flex-col  w-screen items-center">
       <HeaderMenu />
 
       <Outlet />

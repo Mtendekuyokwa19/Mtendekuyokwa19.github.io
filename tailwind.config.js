@@ -29,6 +29,7 @@ export default {
       'bermuda': '#78dcca',
       'everNav': '#232a2d',
       'everbg': "#141b1e",
+      'catWhite': '#eff1f5g',
       'everNavText': '#b3b9b8',
       ...colors
     },
