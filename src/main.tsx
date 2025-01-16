@@ -7,7 +7,7 @@ import { Footer } from "./Home.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div>
+    <div className="flex flex-col gap-0">
       <RouterProvider router={router} />
       <Footer />
     </div>

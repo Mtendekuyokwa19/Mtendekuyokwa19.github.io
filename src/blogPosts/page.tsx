@@ -3,15 +3,38 @@ import { Footer } from "../Home";
 
 export function Post() {
   return (
-    <section className=" flex-col flex h-dvh items-center w-fit">
+    <section className=" flex h-dvh justify-center w-fit">
       <BlogPost />
+      <TableOfContents />
     </section>
   );
 }
 
+function TableOfContents() {
+  return (
+    <div className="fixed top-32  right-72 flex flex-col gap-2">
+      <p className="dark:text-emerald-300 text-emerald-600 text-lg">
+        On this page
+      </p>
+      <div className="flex flex-col gap-2 border-t-3 border-indigo-50">
+        <a className="font-bold" href="">Introduction</a>
+        <a href="">Main goal</a>
+        <a href="">conclusion</a>
+      </div>
+    </div>
+  );
+}
+
+function Image() {
+  return (
+    <div className="w-fit">
+      <img src="/woman.jpg" alt="" />
+    </div>
+  );
+}
 export const BlogPost = () => {
   return (
-    <div className="flex justify-between items-center flex-col gap-4 w-3/4">
+    <div className="flex items-center flex-col gap-4 w-3/4">
       <H>
         THE MAN FROM UNCLE
       </H>
@@ -19,6 +42,7 @@ export const BlogPost = () => {
         <Avatar />
       </div>
       <div className="flex flex-col gap-4 w-1/2">
+        <Image />
         <P>
           This is great because typescript interfaces can extend many
           interfaces, so PropsWithChildren is just one of potentailly many. It
@@ -71,7 +95,9 @@ function Avatar() {
       <div>
         <p className="font-Quicksand">Mtende Kuyokwa</p>
 
-        <p className="text-slate-600 font-Quicksand text-sm">2 days ago .</p>
+        <p className="text-slate-600 dark:text-slate-100 font-Quicksand text-sm">
+          2 days ago .
+        </p>
       </div>
     </div>
   );

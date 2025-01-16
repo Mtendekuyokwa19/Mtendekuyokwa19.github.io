@@ -82,6 +82,7 @@ function Blogcard() {
         <p className="text-sm text-slate-700 dark:text-slate-400">
           The real blue pill you need for better code refactoring
         </p>
+        <p className="font-sans text-sm text-blue-200">📖 2 min read</p>
       </div>
     </section>
   );

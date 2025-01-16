@@ -17,10 +17,10 @@ function HeaderMenu() {
     <div className="flex w-full bg-catNav  sticky top-0 p-4 justify-evenly dark:bg-everNav ">
       <Avatar />
       <div className="flex font-JetBrains font-bold gap-8 relative right-11 justify-center items-center">
-        <p className="text-lg">Blog</p>
-        <p className="text-lg">Lists</p>
-
-        <p className="text-lg">About</p>
+        {/* <p className="text-lg">Blog</p> */}
+        {/* <p className="text-lg">Lists</p> */}
+        {/**/}
+        {/* <p className="text-lg">About</p> */}
       </div>
 
       <div className="flex gap-4 justify-center items-center">
