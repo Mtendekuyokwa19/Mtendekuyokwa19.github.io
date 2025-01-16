@@ -61,13 +61,17 @@ function Avatar() {
 }
 
 function ToogleDark({ iconSize }: Itoogledark) {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(localStorage.getItem("dark") === "true");
   function darkModeHandler() {
     setDark(!dark);
     document.body.classList.toggle("dark");
-    localStorage.setItem("dark", JSON.stringify(dark));
+    localStorage.setItem("dark", JSON.stringify(!dark));
   }
-
+  useEffect(() => {
+    document.body.classList.add(
+      localStorage.getItem("dark") === "true" ? "dark" : "light",
+    );
+  }, []);
   return (
     <button onClick={darkModeHandler}>
       {dark ? <IoSunny size={iconSize} /> : <IoMoon size={iconSize} />}

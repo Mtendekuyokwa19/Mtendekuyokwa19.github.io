@@ -57,7 +57,7 @@ function H({ children }: Hprops) {
 }
 function P({ children }: Hprops) {
   return (
-    <div>
+    <div className="text-slate-700 dark:text-slate-400">
       <p>{children}</p>
     </div>
   );
