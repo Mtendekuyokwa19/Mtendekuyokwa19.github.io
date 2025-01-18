@@ -5,6 +5,7 @@ import {
   IoSearch,
 } from "react-icons/io5";
 import { H2 } from "./blogPosts/page";
+import { Link } from "react-router";
 
 export default function Home() {
   return (
@@ -72,27 +73,29 @@ function Search() {
 
 function Blogcard() {
   return (
-    <section className="w-full  flex justify-center items-center ">
-      <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
-        <div>
-          <img
-            src="/woman.jpg"
-            alt="woman on computer"
-            className="rounded-md"
-          />
-        </div>
-        <div className=" flex flex-col gap-1">
-          <div className="bg-emerald-700 font-JetBrains rounded-full flex justify-center items-center w-20 text-white text-sm">
-            <p>Neovim</p>
+    <Link to={""}>
+      <section className="w-full  flex justify-center items-center ">
+        <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
+          <div>
+            <img
+              src="/woman.jpg"
+              alt="woman on computer"
+              className="rounded-md"
+            />
           </div>
-          <h2 className="font-bold text-xl">Divorce your IDE</h2>
-        </div>
+          <div className=" flex flex-col gap-1">
+            <div className="bg-emerald-700 font-JetBrains rounded-full flex justify-center items-center w-20 text-white text-sm">
+              <p>Neovim</p>
+            </div>
+            <h2 className="font-bold text-xl">Divorce your IDE</h2>
+          </div>
 
-        <p className="text-sm text-slate-700 dark:text-slate-400">
-          The real blue pill you need for better code refactoring
-        </p>
-        <p className="font-sans text-sm text-blue-200">📖 2 min read</p>
-      </div>
-    </section>
+          <p className="text-sm text-slate-700 dark:text-slate-400">
+            The real blue pill you need for better code refactoring
+          </p>
+          <p className="font-sans text-sm text-blue-200">📖 2 min read</p>
+        </div>
+      </section>
+    </Link>
   );
 }
