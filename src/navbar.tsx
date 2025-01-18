@@ -1,20 +1,22 @@
 import { useEffect, useState } from "react";
 import { IoLogoGithub } from "react-icons/io";
 import { IoMoon, IoSunny } from "react-icons/io5";
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
+import { Footer } from "./Home";
 
 export const Navbar = () => {
   return (
-    <div className="gap-7 bg-catWhite dark:text-everNavText dark:bg-everbg      flex flex-col  w-full items-center">
+    <div className="gap-7 h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-everbg      w-full ">
       <HeaderMenu />
 
       <Outlet />
+      <Footer />
     </div>
   );
 };
 function HeaderMenu() {
   return (
-    <div className="flex w-full bg-catNav  sticky top-0 p-4 justify-evenly dark:bg-everNav ">
+    <div className="flex w-full bg-catNav  sticky top-0 p-4 sm:justify-evenly md:justify-evenly justify-between dark:bg-everNav ">
       <Avatar />
       <div className="flex font-JetBrains font-bold gap-8 relative right-11 justify-center items-center">
         {/* <p className="text-lg">Blog</p> */}
@@ -44,19 +46,21 @@ function Githubbtn() {
 
 function Avatar() {
   return (
-    <div className="flex justify-center items-center gap-2">
-      {/* <div className=""> */}
-      {/*   <img src="/header.jpg" className="rounded-full w-10 flex justify-center items-center h-9 bg-red-600" alt="mypfp" /> */}
-      {/**/}
-      {/* </div> */}
+    <Link to={"/"}>
+      <div className="flex justify-center items-center gap-2">
+        {/* <div className=""> */}
+        {/*   <img src="/header.jpg" className="rounded-full w-10 flex justify-center items-center h-9 bg-red-600" alt="mypfp" /> */}
+        {/**/}
+        {/* </div> */}
 
-      <div className="flex justify-center items-baseline gap-1">
-        <p className="font-Alfa text-2xl">Mtende</p>
+        <div className="flex justify-center items-baseline gap-1">
+          <p className="font-Alfa text-2xl">Mtende</p>
 
-        <div className="font-Alfa rounded-full bg-green-700 w-2 h-2 text-2xl">
+          <div className="font-Alfa rounded-full bg-green-700 w-2 h-2 text-2xl">
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

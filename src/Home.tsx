@@ -4,13 +4,16 @@ import {
   IoLogoTwitter,
   IoSearch,
 } from "react-icons/io5";
+import { H2 } from "./blogPosts/page";
 
 export default function Home() {
   return (
     <div>
-      <Search />
-      <section className="w-auto flex justify-center">
-        <div className="gap-y-10 gap-x-5 grid  grid-flow-row grid-cols-3 grid-rows-2  py-9">
+      {/* <Search /> */}
+
+      <section className="w-auto flex flex-col  items-center">
+        <H2>All Posts.</H2>
+        <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid sm:flex flex-col md:gap-2 grid-flow-row grid-cols-3 grid-rows-2 md:py-3 sm:py-9">
           <Blogcard />
 
           <Blogcard />
@@ -27,21 +30,27 @@ export function Footer() {
   return (
     <div className="gap-7 bg-catWhite dark:text-everNavText dark:bg-everbg      flex flex-col  w-full items-center p-8">
       <div className=" w-full flex justify-between">
-        <p>Contact</p>
+        <a href="mailto:mtendekuyokwa@gmail.com">Contact</a>
         <div className="flex gap-2">
           <div>
-            <IoLogoTwitter size={20} />
+            <a href="https://x.com/mtende_kuyokwa">
+              <IoLogoTwitter size={20} />
+            </a>
           </div>
 
           <div>
-            <IoLogoMedium size={20} />
+            <a href="https://medium.com/@mtendekuyokwa19">
+              <IoLogoMedium size={20} />
+            </a>
           </div>
 
           <div>
-            <IoLogoDiscord size={20} />
+            <a href="https://discord.com/users/1178601817899282602">
+              <IoLogoDiscord size={20} />
+            </a>
           </div>
         </div>
-        <p>Donate</p>
+        <a href="https://iccf-holland.org/">Donate</a>
       </div>
     </div>
   );
