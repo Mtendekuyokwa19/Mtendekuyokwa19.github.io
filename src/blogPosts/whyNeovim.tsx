@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Footer } from "../Home";
+// import { Footer } from "../Home";
 
 export function WhyNeovim() {
   return (

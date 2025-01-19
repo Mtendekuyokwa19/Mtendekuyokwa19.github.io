@@ -2,7 +2,7 @@ import {
   IoLogoDiscord,
   IoLogoMedium,
   IoLogoTwitter,
-  IoSearch,
+  // IoSearch,
 } from "react-icons/io5";
 import { H2 } from "./blogPosts/whyNeovim";
 import { Link } from "react-router";
@@ -13,7 +13,7 @@ export default function Home() {
       {/* <Search /> */}
 
       <section className="w-auto flex flex-col  items-center">
-        <H2>All Posts.</H2>
+        <H2 id={""}>All Posts.</H2>
         <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid sm:flex flex-col md:gap-2 grid-flow-row grid-cols-3 grid-rows-2 md:py-3 sm:py-9">
           <Blogcard />
         </div>
@@ -50,20 +50,21 @@ export function Footer() {
     </div>
   );
 }
-function Search() {
-  return (
-    <div className="flex  w-full  justify-center items-center gap-2">
-      <input
-        className="bg-slate-200 dark:bg-everNav p-3 w-1/2 rounded-md"
-        placeholder="Search For Article..."
-        type="search"
-      />
-      <button className="bg-slate-200 dark:bg-everNav p-3 rounded-md">
-        <IoSearch size={25} />
-      </button>
-    </div>
-  );
-}
+
+// function Search() {
+//   return (
+//     <div className="flex  w-full  justify-center items-center gap-2">
+//       <input
+//         className="bg-slate-200 dark:bg-everNav p-3 w-1/2 rounded-md"
+//         placeholder="Search For Article..."
+//         type="search"
+//       />
+//       <button className="bg-slate-200 dark:bg-everNav p-3 rounded-md">
+//         <IoSearch size={25} />
+//       </button>
+//     </div>
+//   );
+// }
 
 function Blogcard() {
   return (
