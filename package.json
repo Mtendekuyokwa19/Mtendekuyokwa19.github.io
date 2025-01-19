@@ -1,5 +1,6 @@
 {
   "name": "blog",
+"homepage": "https://mtendekuyokwa19.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+,"predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "react": "^18.3.1",
