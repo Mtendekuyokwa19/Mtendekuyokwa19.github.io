@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
     element: <Navbar />,
     children: [
       { index: true, element: <Home /> },
-      { path: "TheWorldMigratesToNeovim", element: <WhyNeovim /> },
+      { path: "theworldmigratestoneovim", element: <WhyNeovim /> },
     ],
   },
 ]);

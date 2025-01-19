@@ -68,7 +68,7 @@ export function Footer() {
 
 function Blogcard() {
   return (
-    <Link to={"TheWorldMigratesToNeovim"}>
+    <Link to="/theworldmigratestoneovim">
       <section className="w-full  flex justify-center items-center ">
         <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
           <div>
