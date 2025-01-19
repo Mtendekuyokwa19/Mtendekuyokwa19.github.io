@@ -89,7 +89,9 @@ function Blogcard() {
             Why the world will move to neovim soon. Explaining how you are
             playing a part
           </p>
-          <p className="font-sans text-sm text-blue-200">📖 1 min read</p>
+          <p className="font-sans text-sm text-blue-600 dark:text-blue-200">
+            📖 1 min read
+          </p>
         </div>
       </section>
     </Link>
