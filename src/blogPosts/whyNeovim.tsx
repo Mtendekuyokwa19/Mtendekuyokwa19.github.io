@@ -67,7 +67,7 @@ export function H2({ children, id }: IH2) {
 }
 export const BlogPost = () => {
   return (
-    <div className="flex items-center flex-col gap-4 lg:w-3/4 md:w-3/4">
+    <div className="flex dark:bg-everbg items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
       <H>
         THE WORLD MIGRATES TO NEOVIM
       </H>
@@ -148,7 +148,7 @@ type Hprops = {
 function H({ children }: Hprops) {
   return (
     <section className="flex gap-2 rounded-md flex-col items-center">
-      <h2 className="font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-lg">
+      <h2 className="font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-md">
         {children}
       </h2>
 

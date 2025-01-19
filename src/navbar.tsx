@@ -6,7 +6,7 @@ import { Footer } from "./Home";
 
 export const Navbar = () => {
   return (
-    <div className="gap-7 h-full flex flex-col items-stretch justify-between bg-catWhite dark:text-everNavText dark:bg-everbg      w-full ">
+    <div className=" h-dvh  justify-between md:h-full lg:h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-everbg      w-full ">
       <HeaderMenu />
 
       <Outlet />
