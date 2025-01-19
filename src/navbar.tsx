@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoLogoGithub } from "react-icons/io";
 import { IoMoon, IoSunny } from "react-icons/io5";
-import { Link, Outlet } from "react-router";
+import { Link, Outlet } from "react-router-dom";
 import { Footer } from "./Home";
 
 export const Navbar = () => {

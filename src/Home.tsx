@@ -5,7 +5,7 @@ import {
   // IoSearch,
 } from "react-icons/io5";
 import { H2 } from "./blogPosts/whyNeovim";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
