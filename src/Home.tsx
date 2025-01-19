@@ -4,7 +4,7 @@ import {
   IoLogoTwitter,
   IoSearch,
 } from "react-icons/io5";
-import { H2 } from "./blogPosts/page";
+import { H2 } from "./blogPosts/whyNeovim";
 import { Link } from "react-router";
 
 export default function Home() {
@@ -15,12 +15,6 @@ export default function Home() {
       <section className="w-auto flex flex-col  items-center">
         <H2>All Posts.</H2>
         <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid sm:flex flex-col md:gap-2 grid-flow-row grid-cols-3 grid-rows-2 md:py-3 sm:py-9">
-          <Blogcard />
-
-          <Blogcard />
-
-          <Blogcard />
-          <Blogcard />
           <Blogcard />
         </div>
       </section>
@@ -73,7 +67,7 @@ function Search() {
 
 function Blogcard() {
   return (
-    <Link to={""}>
+    <Link to={"TheWorldMigratesToNeovim"}>
       <section className="w-full  flex justify-center items-center ">
         <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
           <div>
@@ -87,13 +81,14 @@ function Blogcard() {
             <div className="bg-emerald-700 font-JetBrains rounded-full flex justify-center items-center w-20 text-white text-sm">
               <p>Neovim</p>
             </div>
-            <h2 className="font-bold text-xl">Divorce your IDE</h2>
+            <h2 className="font-bold text-xl">The world migrates to neovim</h2>
           </div>
 
           <p className="text-sm text-slate-700 dark:text-slate-400">
-            The real blue pill you need for better code refactoring
+            Why the world will move to neovim soon. Explaining how you are
+            playing a part
           </p>
-          <p className="font-sans text-sm text-blue-200">📖 2 min read</p>
+          <p className="font-sans text-sm text-blue-200">📖 1 min read</p>
         </div>
       </section>
     </Link>
