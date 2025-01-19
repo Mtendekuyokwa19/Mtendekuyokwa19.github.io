@@ -9,7 +9,7 @@ import { Link } from "react-router";
 
 export default function Home() {
   return (
-    <div className="lg:min-h-[600px] md:min-h-[600px]">
+    <div className="md:min-h-lvh lg:min-h-lvh">
       {/* <Search /> */}
 
       <section className="p-4 w-auto flex flex-col  items-center">
