@@ -3,6 +3,7 @@ import { Navbar } from "./navbar";
 import { WhyNeovim } from "./blogPosts/whyNeovim";
 import { createBrowserRouter } from "react-router-dom";
 import { Page404 } from "./404";
+import { VimInThrees } from "./blogPosts/vimInThrees";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "theworldmigratestoneovim", element: <WhyNeovim /> },
+      {path:"viminthrees",element:<VimInThrees/>}
     ],
   },
 ]);

@@ -16,6 +16,8 @@ export default function Home() {
         <H2 id={""}>All Posts.</H2>
         <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex">
           <Blogcard />
+
+          <Blogcard1 />
         </div>
       </section>
     </div>
@@ -66,6 +68,34 @@ export function Footer() {
 //   );
 // }
 
+function Blogcard1() {
+  return (
+    <Link to="/viminthrees">
+      <section className="w-full  flex justify-center items-center ">
+        <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
+          <div>
+            <img
+              src="/workflow.png"
+              alt="woman on computer"
+              className="rounded-md"
+            />
+          </div>
+          <div className=" flex flex-col gap-1">
+            <div className="bg-emerald-700 font-JetBrains rounded-full flex justify-center items-center w-20 text-white text-sm">
+              <p>Neovim</p>
+            </div>
+            <h2 className="font-bold text-xl">Vim in threes</h2>
+          </div>
+
+          <p className="text-sm text-slate-700 dark:text-slate-400">A dive into workflows, tricks and zellij,the multiplexer</p>
+          <p className="font-sans text-sm text-blue-600 dark:text-blue-200">
+            📖 1.5 min read
+          </p>
+        </div>
+      </section>
+    </Link>
+  );
+}
 function Blogcard() {
   return (
     <Link to="/theworldmigratestoneovim">
