@@ -78,7 +78,7 @@ export const BlogPost = () => {
         <P>I recollect that in <A children={"VsC*de"} link={"https://www.reddit.com/r/ProgrammerHumor/comments/104wsvz/this_unbiased_post_was_created_by_the_the_vscode/"} />  we had "ALT-up" to move the line up and "AlT-down" to
           do the opposite.Reviewing the almighty vim manual I discovered th "m" cmd.Here is a stackoverflow post on <A children={"this"} link={"https://stackoverflow.com/questions/7501092/can-i-map-alt-key-in-vim"} />
         </P>
-        <div className=" flex p-4 md:p-0 lg:p-4 rounded flex-col items-center bg-slate-950 ">
+        <div className="text-slate-300 flex p-4 md:p-0 lg:p-4 rounded flex-col items-center bg-slate-950 ">
 
 
           <code>
