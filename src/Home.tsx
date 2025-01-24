@@ -75,8 +75,8 @@ function Blogcard1() {
         <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
           <div>
             <img
-              src="/workflow.png"
-              alt="woman on computer"
+              src="/preview2.png"
+              alt="my workflow"
               className="rounded-md"
             />
           </div>
