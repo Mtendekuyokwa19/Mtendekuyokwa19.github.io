@@ -70,57 +70,57 @@ export const BlogPost = () => {
           />
         </div>
         <P>I think I have discovered another super remmap in vim. Moving a highlight
-        paragraph was usually done by havig to "dd"  the "p" which was cool but for
-        something that was moving one/ two lines above it was too many keystrokes for
-        the great egornomic vim.
+          paragraph was usually done by havig to "dd"  the "p" which was cool but for
+          something that was moving one/ two lines above it was too many keystrokes for
+          the great egornomic vim.
 
         </P>
-<P>I recollect that in <A children={"VsC*de"} link={"https://www.reddit.com/r/ProgrammerHumor/comments/104wsvz/this_unbiased_post_was_created_by_the_the_vscode/"}/>  we had "ALT-up" to move the line up and "AlT-down" to
-do the opposite.Reviewing the almighty vim manual I discovered th "m" cmd.Here is a stackoverflow post on <A children={"this"} link={"https://stackoverflow.com/questions/7501092/can-i-map-alt-key-in-vim"}/>
-</P>
+        <P>I recollect that in <A children={"VsC*de"} link={"https://www.reddit.com/r/ProgrammerHumor/comments/104wsvz/this_unbiased_post_was_created_by_the_the_vscode/"} />  we had "ALT-up" to move the line up and "AlT-down" to
+          do the opposite.Reviewing the almighty vim manual I discovered th "m" cmd.Here is a stackoverflow post on <A children={"this"} link={"https://stackoverflow.com/questions/7501092/can-i-map-alt-key-in-vim"} />
+        </P>
         <div className=" flex p-4 md:p-0 lg:p-4 rounded flex-col items-center bg-slate-950 ">
 
 
-        <code>
+          <code>
 
-map("n", "M-k", ":m .-2CR")
+            map("n", "M-k", ":m .-2CR")
 
 
-        </code>
-       <code>
+          </code>
+          <code>
 
-map("n", "M-k", ":m .-2CR")
-        </code> 
+            map("n", "M-k", ":m .-2CR")
+          </code>
         </div>
         <P>
           <H2 id="a_philosophical_vim_lesson">A philosophical vim lesson</H2>
 
-I spent the greater part of the year trying to get people to use linux desktop and I
-managed to get about 6 people. When I later discovered vim I tried getting
-everyone on here because the workflow was golden. I wasn't as lucky as I only
-managed to get one(the person actually got bored reading vimtutor and quit
-apparently so zero)
+          I spent the greater part of the year trying to get people to use linux desktop and I
+          managed to get about 6 people. When I later discovered vim I tried getting
+          everyone on here because the workflow was golden. I wasn't as lucky as I only
+          managed to get one(the person actually got bored reading vimtutor and quit
+          apparently so zero)
         </P>
-<P>
+        <P>
 
 
-In a recent discussion in the neovim <A children={"subreddit"} link={"https://www.reddit.com/r/neovim/comments/1i5u1zh/intoducing_neovim_to_other_people_how_did_it_go/m86rf39/"}/>, I learnt that you have to accept
-people and their weird devflows because neither you would want to leave their
-editor so why should they. It is oK to bring it up but do not nag them about it. 
-Technology is a means not an end.
+          In a recent discussion in the neovim <A children={"subreddit"} link={"https://www.reddit.com/r/neovim/comments/1i5u1zh/intoducing_neovim_to_other_people_how_did_it_go/m86rf39/"} />, I learnt that you have to accept
+          people and their weird devflows because neither you would want to leave their
+          editor so why should they. It is oK to bring it up but do not nag them about it.
+          Technology is a means not an end.
         </P>
 
 
         <P>
           <H2 id="zellij">Zellij, you beauty</H2>
 
-Out of the box most <A children={" vim chads"} link={"https://www.reddit.com/r/programminghumor/comments/ubo08q/vimchad/"}/>, pair their workflow with tmux. I tried it out
-but I didn't see the point since kitty was able to split my terminal perfectly
-(boy was I wrong). I later tried out zellij after I saw it in one of <A children={" dhh's"} link={" https://en.wikipedia.org/wiki/David_Heinemeier_Hansson"}/>
- workflows(a person also mentioned it in the neovim unofficial channel). The fact
-that it comes with vim bindings out of the box meant I will not have that big of
-a learning curve. 
-The default layouts are  great. I still dream of trying tmux with this new multiplexing knowledge lol
+          Out of the box most <A children={" vim chads"} link={"https://www.reddit.com/r/programminghumor/comments/ubo08q/vimchad/"} />, pair their workflow with tmux. I tried it out
+          but I didn't see the point since kitty was able to split my terminal perfectly
+          (boy was I wrong). I later tried out zellij after I saw it in one of <A children={" dhh's"} link={" https://en.wikipedia.org/wiki/David_Heinemeier_Hansson"} />
+          workflows(a person also mentioned it in the neovim unofficial channel). The fact
+          that it comes with vim bindings out of the box meant I will not have that big of
+          a learning curve.
+          The default layouts are  great. I still dream of trying tmux with this new multiplexing knowledge lol
 
         </P>
 
@@ -186,14 +186,7 @@ interface IA {
 }
 function A({ children, link }: IA) {
   return (
-      <a className="text-blue-700 lg:text-lg text-md dark:text-blue-400" href={link}>{children}</a>
+    <a className="text-blue-700 lg:text-lg text-md dark:text-blue-400" href={link}>{children}</a>
   );
 }
 
-interface IC {
-  children: string;
-}
-function C({ children }: IC) {
-  return (
-      <p className="text-yellow-700 text-md dark:text-yellow-400">{children}</p>
-  );}
