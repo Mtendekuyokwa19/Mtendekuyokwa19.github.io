@@ -14,7 +14,7 @@ export default function Home() {
 
       <section className="p-4 w-auto flex flex-col  items-center">
         <H2 id={""}>All Posts.</H2>
-        <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex">
+        <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
           <Blogcard />
 
           <Blogcard1 />
