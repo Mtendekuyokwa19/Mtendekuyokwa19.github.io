@@ -69,8 +69,8 @@ export const BlogPost = () => {
             sayer={"Terry Pratchett"}
           />
         </div>
-        <P>I think I have discovered another super remmap in vim. Moving a highlight
-          paragraph was usually done by havig to "dd"  the "p" which was cool but for
+        <P>I think I have discovered another super remmap in vim. Moving a highlighted
+          paragraph was usually done by having to "dd" and then "p" which was cool, but for
           something that was moving one/ two lines above it was too many keystrokes for
           the great egornomic vim.
 
