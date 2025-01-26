@@ -134,7 +134,7 @@ type Hprops = {
 function H({ children }: Hprops) {
   return (
     <section id="viminthrees" className="flex gap-2 rounded-md flex-col items-center">
-      <h2 className="font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-md">
+      <h2 className="font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-xl">
         {children}
       </h2>
 
