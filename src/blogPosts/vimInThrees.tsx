@@ -138,7 +138,6 @@ function H({ children }: Hprops) {
         {children}
       </h2>
 
-      {/* <div className="w-96 bg-catNav h-0.5"></div> */}
     </section>
   );
 }
