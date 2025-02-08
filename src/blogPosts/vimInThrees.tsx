@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 // import { Footer } from "../Home";
-
+import { P } from "./emacsItch.tsx"
 export function VimInThrees() {
   return (
     <section className=" flex justify-center w-fit">
@@ -139,13 +139,6 @@ function H({ children }: Hprops) {
       </h2>
 
     </section>
-  );
-}
-function P({ children }: Hprops) {
-  return (
-    <div className="text-slate-700  text-justify lg:text-lg text-md px-3 dark:text-slate-400">
-      <p>{children}</p>
-    </div>
   );
 }
 function Avatar() {
