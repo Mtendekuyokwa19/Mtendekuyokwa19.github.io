@@ -38,7 +38,7 @@ function TableOfContents() {
 function Image() {
   return (
     <div className="w-fit p-3 lg:p-0 md:p0">
-      <img src="/workflow.png" alt="" />
+      <img src="/preview2.png" alt="" />
     </div>
   );
 }
