@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="md:min-h-lvh lg:min-h-lvh">
-      {/* <Search /> */}
 
       <section className="p-4 w-auto flex flex-col  items-center">
         <H2 id={""}>All Posts.</H2>
@@ -72,8 +71,8 @@ export function Footer() {
 
 function Blogcard2() {
   return (
-    <Link to="/emacsitch">
-      <section className="w-full  flex justify-center items-center ">
+    <Link to="/emacsitch" className="flex">
+      <section className="w-full h-full flex-1   flex justify-center items-center ">
         <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
           <div>
             <img
@@ -100,14 +99,14 @@ function Blogcard2() {
 }
 function Blogcard1() {
   return (
-    <Link to="/viminthrees">
-      <section className="w-full  flex justify-center items-center ">
+    <Link to="/viminthrees" className="flex">
+      <section className="w-full  flex  flex-1  justify-center items-center ">
         <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
           <div>
             <img
               src="/preview2.png"
               alt="my workflow"
-              className="rounded-md"
+              className="rounded-md h-56"
             />
           </div>
           <div className=" flex flex-col gap-1">
@@ -135,7 +134,7 @@ function Blogcard() {
             <img
               src="/woman.jpg"
               alt="woman on computer"
-              className="rounded-md"
+              className="rounded-md h-52"
             />
           </div>
           <div className=" flex flex-col gap-1">

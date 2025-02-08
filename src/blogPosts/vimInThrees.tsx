@@ -9,7 +9,7 @@ export function VimInThrees() {
     </section>
   );
 }
-
+// TODO: fix the imaging on firefox
 function TableOfContents() {
   return (
     <div className="lg:fixed top-32 right-72 md:hidden hidden lg:flex flex-col gap-2">
