@@ -72,8 +72,8 @@ export const BlogPost = () => {
         <P>
 
 
-          I first stumbled over  emacs before I heard about neovim and It was actually a video about vim vs emacs (Now that I have used neovim I think it is useless to argue aout this).
-          I was simply using it to open my powerpoint presentation for class.
+          I first stumbled over  emacs before I heard about neovim and It was actually a video about vim vs emacs (Now that I have used neovim I think it is useless to argue about this).
+          I was simply using emacs to open my powerpoint presentation for class.
           I tried using it to write class notes but it was kinda confusing (Skill issue lol).
           I went back to using libre office for powerpoint powerpoint presentations and obsidian for notes.
 
@@ -91,7 +91,7 @@ export const BlogPost = () => {
         <P>
           <H2 id="friction_divorce">Friction of divorce</H2>
 
-          I think for one the reason I find it hard to try out emacs is that vim is very ergonomic. I mean when the ed or vi or vim author was building the text editor, they took into account
+          I think for one the reason I find it hard to try out emacs is that vim is very ergonomic out of the box. I mean when the ed or vi or vim author was building the text editor, they took into account
           of the keyboard real real nice(in joey's voice, from friends).
 
 
