@@ -6,7 +6,7 @@ import { Footer } from "./Home";
 import { Analytics } from "@vercel/analytics/react";
 export const Navbar = () => {
   return (
-    <div className=" h-dvh  justify-between md:h-full lg:h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-everbg      w-full ">
+    <div className="  justify-between md:h-full lg:h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-everbg      w-full ">
       <HeaderMenu />
 
       <Analytics />

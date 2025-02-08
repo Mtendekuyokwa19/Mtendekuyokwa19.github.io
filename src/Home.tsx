@@ -15,9 +15,11 @@ export default function Home() {
       <section className="p-4 w-auto flex flex-col  items-center">
         <H2 id={""}>All Posts.</H2>
         <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
-          <Blogcard />
 
+          <Blogcard2 />
           <Blogcard1 />
+
+          <Blogcard />
         </div>
       </section>
     </div>
@@ -68,6 +70,34 @@ export function Footer() {
 //   );
 // }
 
+function Blogcard2() {
+  return (
+    <Link to="/emacsitch">
+      <section className="w-full  flex justify-center items-center ">
+        <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
+          <div>
+            <img
+              src="/emacs.png"
+              alt="my workflow"
+              className="rounded-md"
+            />
+          </div>
+          <div className=" flex flex-col gap-1">
+            <div className="bg-blue-700 font-JetBrains rounded-full flex justify-center items-center w-20 text-white text-sm">
+              <p>rant</p>
+            </div>
+            <h2 className="font-bold text-xl">The emacs itch?</h2>
+          </div>
+
+          <p className="text-sm text-slate-700 dark:text-slate-400">A rant on being stuck between the emacs world and the vim world</p>
+          <p className="font-sans text-sm text-blue-600 dark:text-blue-200">
+            📖 1.2 min read
+          </p>
+        </div>
+      </section>
+    </Link>
+  );
+}
 function Blogcard1() {
   return (
     <Link to="/viminthrees">
