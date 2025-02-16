@@ -61,7 +61,7 @@ function Menu({ tooglemodal }: Imenu) {
 
 
   return (
-    <section className="absolute flex-col  w-full h-screen bg-stone-900 flex justify-center items-center "
+    <section className="absolute flex-col text-slate-300  w-full h-screen bg-stone-900 flex justify-center items-center "
     >
       <div className="w-screen text-right px-12 p-4  font-bold" onClick={tooglemodal}> X</div>
       <section className="flex-col  w-full h-full bg-stone-900 flex justify-center items-center ">
