@@ -55,7 +55,7 @@ export function H2({ children, id }: IH2) {
 }
 export const BlogPost = () => {
   return (
-    <div className="flex dark:bg-everbg items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
+    <div className="flex items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
       <H>The Emacs Itch?</H>
       <div className="lg:w-1/2 flex ">
         <Avatar />
@@ -117,19 +117,20 @@ export const BlogPost = () => {
 type Hprops = {
   children: ReactNode;
 };
-function H({ children }: Hprops) {
+export function H({ children }: Hprops) {
   return (
     <section id="viminthrees" className="flex gap-2 rounded-md flex-col items-center">
-      <h2 className="font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-xl">
+      <h1 className="font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-xl">
+
         {children}
-      </h2>
+      </h1>
 
     </section>
   );
 }
 export function P({ children }: Hprops) {
   return (
-    <div className="text-slate-700  text-justify lg:text-lg text-md px-3 dark:text-slate-400">
+    <div className="text-slate-700  text-justify lg:text-md font-mono text-md px-3 dark:text-slate-400">
       <p>{children}</p>
     </div>
   );

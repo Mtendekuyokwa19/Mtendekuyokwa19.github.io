@@ -1,34 +1,95 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { IoLogoGithub } from "react-icons/io";
-import { IoMoon, IoSunny } from "react-icons/io5";
+import { IoMenu, IoMoon, IoSunny } from "react-icons/io5";
 import { Link, Outlet } from "react-router-dom";
 import { Footer } from "./Home";
 import { Analytics } from "@vercel/analytics/react";
 export const Navbar = () => {
-  return (
-    <div className="  justify-between md:h-full lg:h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-everbg      w-full ">
-      <HeaderMenu />
+  const [modal, setmodal] = useState(false)
+  function tooglemodal() {
+    if (modal) { setmodal(false) }
+    else {
+      setmodal(true)
+    }
 
+  }
+  return (
+    <div className="  justify-between md:h-full lg:h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-stone-950      w-full ">
+      <HeaderMenu tooglemodal={tooglemodal} />
+      <Modal modal={modal} tooglemodal={tooglemodal} />
       <Analytics />
-      <Outlet />
-      <Footer />
+      <div className={modal ? "hidden" : ""}>
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 };
-function HeaderMenu() {
+interface Iheadermenu {
+  tooglemodal: () => void
+
+}
+function Hamburger({ tooglemodal }: Iheadermenu) {
   return (
-    <div className="flex w-full bg-catNav  sticky top-0 p-4 sm:justify-evenly md:justify-evenly justify-between dark:bg-everNav ">
+    <button className="md:hidden flex" onClick={tooglemodal} ><IoMenu size={16} /></button>)
+
+}
+interface Imodal {
+  modal: boolean
+
+  tooglemodal: () => void
+
+}
+function Modal({ modal, tooglemodal }: Imodal) {
+  return modal ? <Menu tooglemodal={tooglemodal} /> : ""
+
+
+
+
+
+
+
+
+}
+interface Imenu {
+
+  tooglemodal: () => void
+
+}
+function Menu({ tooglemodal }: Imenu) {
+
+
+
+  return (
+    <section className="absolute flex-col  w-full h-screen bg-stone-900 flex justify-center items-center "
+    >
+      <div className="w-screen text-right px-12 p-4  font-bold" onClick={tooglemodal}> X</div>
+      <section className="flex-col  w-full h-full bg-stone-900 flex justify-center items-center ">
+        <div className="flex flex-col font-JetBrains font-bold gap-8 justify-center ">
+          <Link to="/" onClick={tooglemodal} ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Blog</p></Link>
+          <Link to="/list" onClick={tooglemodal} ><p className="text-lg dark:hover:text-stone-300">Lists</p></Link>
+          <Link to="/bio" onClick={tooglemodal} ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Bio</p></Link>
+        </div>
+
+
+      </section>
+    </section
+    >
+  )
+}
+function HeaderMenu({ tooglemodal }: Iheadermenu) {
+  return (
+    <div className="flex w-full bg-catNav  sticky top-0 p-4 sm:justify-evenly md:justify-evenly justify-between dark:bg-stone-900 ">
       <Avatar />
-      <div className="flex font-JetBrains font-bold gap-8 relative right-11 justify-center items-center">
-        {/* <p className="text-lg">Blog</p> */}
-        {/* <p className="text-lg">Lists</p> */}
-        {/**/}
-        {/* <p className="text-lg">About</p> */}
+      <div className="lg:flex md:flex hidden font-JetBrains font-bold gap-8 relative right-11 justify-center items-center">
+        <Link to="/" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Blog</p></Link>
+        <Link to="/list" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Lists</p></Link>
+        <Link to="/bio" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Bio</p></Link>
       </div>
 
       <div className="flex gap-4 justify-center items-center">
-        <ToogleDark iconSize={25} />
-
+        <Hamburger tooglemodal={tooglemodal} />
+        <ToogleDark iconSize={16} />
         <Githubbtn />
       </div>
     </div>
@@ -39,7 +100,7 @@ function Githubbtn() {
   return (
     <a href="https://github.com/Mtendekuyokwa19">
       <button className="flex justify-center items-center">
-        <IoLogoGithub size={30} />
+        <IoLogoGithub size={25} />
       </button>
     </a>
   );

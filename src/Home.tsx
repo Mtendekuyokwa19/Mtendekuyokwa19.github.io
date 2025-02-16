@@ -1,3 +1,4 @@
+import { BlogcardTemplate, Card } from "./blogPosts/template.tsx"
 import {
   IoLogoDiscord,
   IoLogoMedium,
@@ -7,6 +8,7 @@ import {
 import { H2 } from "./blogPosts/whyNeovim";
 import { Link } from "react-router-dom";
 
+const valentine = new Card("vimafterlife", "afterlife.jpg", "vim, the afterlife", "roads to walk in after finishing vim tutor, how each road will affect you", "Neovim", "green", 1)
 export default function Home() {
   return (
     <div className="md:min-h-lvh lg:min-h-lvh">
@@ -15,9 +17,9 @@ export default function Home() {
         <H2 id={""}>All Posts.</H2>
         <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
 
+          <BlogcardTemplate details={valentine} />
           <Blogcard2 />
           <Blogcard1 />
-
           <Blogcard />
         </div>
       </section>
@@ -26,7 +28,7 @@ export default function Home() {
 }
 export function Footer() {
   return (
-    <div className="gap-7 bg-catWhite dark:text-everNavText dark:bg-everbg      flex flex-col  w-full items-center p-8">
+    <div className="gap-7 bg-catWhite dark:text-everNavText dark:bg-stone-950      flex flex-col  w-full items-center p-8">
       <div className=" w-full flex justify-between">
         <a href="mailto:mtendekuyokwa@gmail.com">Contact</a>
         <div className="flex gap-2">
@@ -71,14 +73,14 @@ export function Footer() {
 
 function Blogcard2() {
   return (
-    <Link to="/emacsitch" className="flex">
+    <Link to="/emacsitch" className="flex justify-center items-center">
       <section className="w-full h-full flex-1   flex justify-center items-center ">
         <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
-          <div>
+          <div className="flex justify-center items-center">
             <img
               src="/emacs.png"
               alt="my workflow"
-              className="rounded-md"
+              className="rounded-md h-52"
             />
           </div>
           <div className=" flex flex-col gap-1">

@@ -55,7 +55,7 @@ export function H2({ children, id }: IH2) {
 }
 export const BlogPost = () => {
   return (
-    <div className="flex dark:bg-everbg items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
+    <div className="flex items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
       <H>Vim in threes</H>
       <div className="lg:w-1/2 flex ">
         <Avatar />
@@ -162,7 +162,7 @@ interface IQuote {
   words: string;
   sayer: string;
 }
-function Quote({ words, sayer }: IQuote) {
+export function Quote({ words, sayer }: IQuote) {
   return (
     <div className="dark:bg-everNav bg-catNav p-4 font-Quicksand italic rounded border-l-2 border-emerald-700 dark:border-emerald-300">
       <div>

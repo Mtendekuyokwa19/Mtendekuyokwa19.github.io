@@ -67,7 +67,7 @@ export function H2({ children, id }: IH2) {
 }
 export const BlogPost = () => {
   return (
-    <div className="flex dark:bg-everbg items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
+    <div className="flex items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
       <H>
         THE WORLD MIGRATES TO NEOVIM
       </H>

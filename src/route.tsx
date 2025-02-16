@@ -6,6 +6,9 @@ import { Page404 } from "./404";
 import { VimInThrees } from "./blogPosts/vimInThrees";
 
 import { EmacsItch } from "./blogPosts/emacsItch.tsx";
+import { Bio } from "./bio.tsx";
+import { Lists } from "./lists.tsx";
+import { VimAfterlife } from "./blogPosts/vimtheafterlife.tsx";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +16,12 @@ export const router = createBrowserRouter([
     errorElement: <Page404 />,
     children: [
       { index: true, element: <Home /> },
+
+      { path: "bio", element: <Bio /> },
+
+      { path: "list", element: <Lists /> },
+
+      { path: "vimafterlife", element: <VimAfterlife /> },
       { path: "theworldmigratestoneovim", element: <WhyNeovim /> },
       { path: "viminthrees", element: <VimInThrees /> }
 
