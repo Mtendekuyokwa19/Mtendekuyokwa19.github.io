@@ -97,43 +97,43 @@ function Techstack() {
 
 }
 
-function Stats() {
-
-
-  return (
-
-    <section className="w-1/2 h-1/2 " >
-
-      <H2 >Github Stats</H2>
-
-      <section className="font-mono text-left text-slate-500 flex gap-8 ">
-        <Stat stat={511} statitle={"contributions"} />
-        <Stat stat={4} statitle={"open source contibutions"} />
-        <Stat stat={87} statitle={"repositories"} />
-
-      </section>
-    </section>
-  )
-
-}
-interface Istat {
-  stat: number
-  statitle: string
-
-}
-function Stat({ stat, statitle }: Istat) {
-  return (
-    <section>
-      <p className="text-lg">{stat}+</p>
-
-      <p>{statitle}</p>
-
-    </section>
-
-  )
-
-
-}
+// function Stats() {
+//
+//
+//   return (
+//
+//     <section className="w-1/2 h-1/2 " >
+//
+//       <H2 >Github Stats</H2>
+//
+//       <section className="font-mono text-left text-slate-500 flex gap-8 ">
+//         <Stat stat={511} statitle={"contributions"} />
+//         <Stat stat={4} statitle={"open source contibutions"} />
+//         <Stat stat={87} statitle={"repositories"} />
+//
+//       </section>
+//     </section>
+//   )
+//
+// }
+// interface Istat {
+//   stat: number
+//   statitle: string
+//
+// }
+// function Stat({ stat, statitle }: Istat) {
+//   return (
+//     <section>
+//       <p className="text-lg">{stat}+</p>
+//
+//       <p>{statitle}</p>
+//
+//     </section>
+//
+//   )
+//
+//
+// }
 function Miscellenous() {
   const languagegrp1 = ["Git", "Github", "npm", "webpack"]
 
