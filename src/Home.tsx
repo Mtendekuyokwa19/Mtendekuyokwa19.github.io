@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <div className="md:min-h-lvh lg:min-h-lvh">
 
-      <section className="p-4 w-auto flex flex-col  items-center">
+      <section className="md:p-4 w-auto flex flex-col  items-center">
         <H2 id={""}>All Posts.</H2>
-        <div className="lg:gap-y-10 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
+        <div className="lg:gap-y-10 w-screen md:w-8/12 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
 
           <BlogcardTemplate details={valentine} />
           <Blogcard2 />

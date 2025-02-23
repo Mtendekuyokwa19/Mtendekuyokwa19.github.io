@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   }
   return (
-    <div className="  justify-between md:h-full lg:h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-stone-950      w-full ">
+    <div className="justify-between md:h-full lg:h-full flex flex-col items-stretch bg-catWhite dark:text-everNavText dark:bg-stone-950      w-full ">
       <HeaderMenu tooglemodal={tooglemodal} />
       <Modal modal={modal} tooglemodal={tooglemodal} />
       <Analytics />
@@ -31,7 +31,7 @@ interface Iheadermenu {
 }
 function Hamburger({ tooglemodal }: Iheadermenu) {
   return (
-    <button className="md:hidden flex" onClick={tooglemodal} ><IoMenu size={16} /></button>)
+    <button className="md:hidden flex" onClick={tooglemodal} ><IoMenu size={26} /></button>)
 
 }
 interface Imodal {
