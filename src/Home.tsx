@@ -9,18 +9,21 @@ import { H2 } from "./blogPosts/whyNeovim";
 import { Link } from "react-router-dom";
 
 const valentine = new Card("vimafterlife", "afterlife.jpg", "vim, the afterlife", "roads to walk in after finishing vim tutor, how each road will affect you", "Neovim", "green", 1)
+
+const emacsitch = new Card("emacsitch", "emacs.png", "The emacs itch? ", "A rant on being stuck between the emacs world and the vim world", "Neovim", "green", 1.2)
+
+const worldandvim = new Card("theworldmigratestoneovim", "woman.jpg", "The world migrates to neovim", "why the world will soon move to neovim. Explaining how you are playing a part", "Neovim", "green", 1.2)
+const viminthrees = new Card("viminthrees", "preview2.png", "Vim in threes", "A dive into workflows, tricks and zellij,the multiplexer", "Neovim", "green", 1.2)
 export default function Home() {
+  const postcards = [valentine, emacsitch, viminthrees, worldandvim]
   return (
     <div className="md:min-h-lvh lg:min-h-lvh">
 
       <section className="md:p-4 w-auto flex flex-col  items-center">
         <H2 id={""}>All Posts.</H2>
         <div className="lg:gap-y-10 w-screen md:w-8/12 gap-x-5 lg:grid md:grid md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
+          {postcards.map(card => <BlogcardTemplate details={card} />)}
 
-          <BlogcardTemplate details={valentine} />
-          <Blogcard2 />
-          <Blogcard1 />
-          <Blogcard />
         </div>
       </section>
     </div>
@@ -70,7 +73,6 @@ export function Footer() {
 //     </div>
 //   );
 // }
-
 function Blogcard2() {
   return (
     <Link to="/emacsitch" className="flex justify-center items-center">
@@ -80,7 +82,7 @@ function Blogcard2() {
             <img
               src="/emacs.png"
               alt="my workflow"
-              className="rounded-md flex-1 h-52"
+              className="rounded-md h-52"
             />
           </div>
           <div className=" flex flex-col gap-1">
@@ -99,6 +101,7 @@ function Blogcard2() {
     </Link>
   );
 }
+
 function Blogcard1() {
   return (
     <Link to="/viminthrees" className="flex">
@@ -127,6 +130,7 @@ function Blogcard1() {
     </Link>
   );
 }
+
 function Blogcard() {
   return (
     <Link to="/theworldmigratestoneovim">
