@@ -69,9 +69,9 @@ interface Icard {
 }
 export function BlogcardTemplate({ details }: Icard) {
   return (
-    <Link to={"/" + details.link} className="flex justify-center items-center">
-      <section className="w-full h-full flex justify-center items-center ">
-        <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
+    <Link to={"/" + details.link} className="flex flex-1 justify-center items-center">
+      <section className="w-full h-full flex md:justify-center flex-1 md:items-center ">
+        <div className="flex dark:hover:bg-everNav p-2 rounded-md flex-1 hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
           <div>
             <img
               src={"/" + details.imgsrc}

@@ -74,13 +74,13 @@ export function Footer() {
 function Blogcard2() {
   return (
     <Link to="/emacsitch" className="flex justify-center items-center">
-      <section className="w-full h-full flex-1   flex justify-center items-center ">
-        <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
+      <section className="w-full h-full flex md:justify-center flex-1 md:items-center ">
+        <div className="flex dark:hover:bg-everNav p-2 rounded-md flex-1 hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
           <div className="flex justify-center items-center">
             <img
               src="/emacs.png"
               alt="my workflow"
-              className="rounded-md h-52"
+              className="rounded-md flex-1 h-52"
             />
           </div>
           <div className=" flex flex-col gap-1">
@@ -102,13 +102,13 @@ function Blogcard2() {
 function Blogcard1() {
   return (
     <Link to="/viminthrees" className="flex">
-      <section className="w-full  flex  flex-1  justify-center items-center ">
-        <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
-          <div>
+      <section className="w-full h-full flex md:justify-center flex-1 md:items-center ">
+        <div className="flex dark:hover:bg-everNav p-2 rounded-md flex-1 hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
+          <div className="flex flex-1">
             <img
               src="/preview2.png"
               alt="my workflow"
-              className="rounded-md h-56"
+              className="rounded-md flex-1 h-56"
             />
           </div>
           <div className=" flex flex-col gap-1">
@@ -130,13 +130,13 @@ function Blogcard1() {
 function Blogcard() {
   return (
     <Link to="/theworldmigratestoneovim">
-      <section className="w-full  flex justify-center items-center ">
-        <div className="flex dark:hover:bg-everNav p-2 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
-          <div>
+      <section className="w-full h-full flex md:justify-center lg:justify-center lg:items-center flex-1 md:items-center ">
+        <div className="flex dark:hover:bg-everNav p-2 rounded-md flex-1 hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
+          <div className="flex-1 flex">
             <img
               src="/woman.jpg"
               alt="woman on computer"
-              className="rounded-md h-52"
+              className="rounded-md flex flex-1 h-56"
             />
           </div>
           <div className=" flex flex-col gap-1">
