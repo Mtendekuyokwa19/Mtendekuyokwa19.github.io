@@ -20,7 +20,7 @@ export default function Home() {
 
       <section className="md:p-4 w-auto my-4 md:my-0 flex flex-col  items-center">
         <H2 id={""}>All Posts.</H2>
-        <div className="lg:gap-y-10 w-screen md:w-8/12 gap-5 lg:grid md:flex md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
+        <div className="lg:gap-y-10 p-2 md:p-0 w-screen md:w-8/12 gap-5 lg:grid md:flex md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
           {postcards.map(card => <BlogcardTemplate details={card} />)}
 
         </div>
