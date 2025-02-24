@@ -106,7 +106,7 @@ export function BlogcardTemplate({ details }: Icard) {
 
               </div>
               <div className="flex gap-1 font-Quicksand justify-center items-start flex-col ">
-                <div className="text-xs flex gap-2"> <p>Feb 18</p> <p>{"⏱️" + details.tagmin + "min read"}</p></div>
+                <div className="text-xs flex gap-2"> <p>{details.date}</p> <p>{"⏱️" + details.tagmin + "min read"}</p></div>
                 <h3 className="text-md font-bold">{details.title}</h3>
                 <p className="text-sm italic">{details.description.substring(0, 40) + "..."}</p>
               </div>

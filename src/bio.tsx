@@ -5,7 +5,6 @@ export function Bio() {
   return (
     <article className="flex flex-col gap-6 p-4 lg:p-0 items-center md:min-h-lvh lg:min-h-lvh">
       <Header />
-      {/* <Stats /> */}
       <section className="lg:flex justify-between lg:w-1/2 w-full">
 
 
@@ -135,7 +134,7 @@ function Techstack() {
 //
 // }
 function Miscellenous() {
-  const languagegrp1 = ["Git", "Github", "npm", "webpack"]
+  const languagegrp1 = ["Git", "Github", "npm", "webpack", "vite"]
 
   const languagegrp2 = ["Vscode", "postman", "Linux", "Vim"]
   let position = 0
@@ -171,7 +170,7 @@ function Miscellenous() {
 function Frameworks() {
   const languagegrp1 = ["Nodejs", "Expressjs", "Reactjs", "Ejs", "jest", "vitest"]
 
-  const languagegrp2 = ["Tailwindcss", "Nextjs", "React-Router", "vite"]
+  const languagegrp2 = ["Tailwindcss", "Nextjs", "React-Router"]
   let position = 0
   return (
 
