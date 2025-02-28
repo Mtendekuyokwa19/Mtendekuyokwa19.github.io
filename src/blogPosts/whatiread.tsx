@@ -7,7 +7,7 @@ export function WhatIread() {
   return (
     <section className=" flex justify-center w-fit">
       <BlogPost />
-      <TableOfContents content={["Understanding lsps", "vim's sister", "golden config", "chris & thiago"]} />
+      <TableOfContents content={["Understanding lsps", "vim's sister", "Golden config", "Chris & Thiago"]} />
     </section>
   );
 }
@@ -39,7 +39,7 @@ export const BlogPost = () => {
           Out of the all the reads, I will simply pull out the neovim related ones from the noise because thats what tickles my wits.
         </P>
         <P>
-          <H2 id="Undertanding lsp">Understanding LSPs</H2>
+          <H2 id="Understanding lsps">Understanding LSPs</H2>
 
           This is a <A link="https://packagemain.tech/p/understanding-the-language-server-protocol?share=">post</A> by Alex pliutau about Language server protocols. The topic of lsps is one that every new neovim user is introduced from the get-go.
           I originally had a wrap around on what lsps are; which simply put <em>is a way to get autocomplete and goto functionality like vscode extensitions for languages.</em>
@@ -69,7 +69,7 @@ export const BlogPost = () => {
         </P>
 
         <P>
-          <H2 id="chris and thiago">Chris and thiago</H2>
+          <H2 id="Chris & Thiago">Chris and thiago</H2>
 
           Maybe I am a fan of drama naturally, I feel like the argument between chris and thiago is equivalent to current linux-rust wars lol.<A link="https://geoff.greer.fm/2015/01/15/why-neovim-is-better-than-vim/">Here </A>
           Chris, the new lead on the vim project and thiago have an argument on vim vs neovim.
