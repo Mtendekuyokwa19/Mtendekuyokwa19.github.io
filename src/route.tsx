@@ -9,6 +9,7 @@ import { EmacsItch } from "./blogPosts/emacsItch.tsx";
 import { Bio } from "./bio.tsx";
 import { Lists } from "./lists.tsx";
 import { VimAfterlife } from "./blogPosts/vimtheafterlife.tsx";
+import { WhatIread } from "./blogPosts/whatiread.tsx";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -20,11 +21,10 @@ export const router = createBrowserRouter([
       { path: "bio", element: <Bio /> },
 
       { path: "list", element: <Lists /> },
-
       { path: "vimafterlife", element: <VimAfterlife /> },
       { path: "theworldmigratestoneovim", element: <WhyNeovim /> },
-      { path: "viminthrees", element: <VimInThrees /> }
-
+      { path: "viminthrees", element: <VimInThrees /> },
+      { path: "whatiread", element: <WhatIread /> }
       , { path: "emacsitch", element: <EmacsItch /> }
     ],
   },

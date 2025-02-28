@@ -191,10 +191,10 @@ interface IA {
   children: string;
   link: string;
 }
-function A({ children, link }: IA) {
+export function A({ children, link }: IA) {
   return (
-    <div className="text-blue-700 lg:text-lg text-md dark:text-blue-400">
-      <a href={link}>{children}</a>
+    <div className="inline text-blue-700 lg:text-md text-md dark:text-blue-400">
+      <a href={link} target="_blank">{children}</a>
     </div>
   );
 }

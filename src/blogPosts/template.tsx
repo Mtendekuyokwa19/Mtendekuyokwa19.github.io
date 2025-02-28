@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { CodeBlock } from 'react-code-block';
+
 export function TableOfContents({ content }: ITOC) {
   return (
     <div className="lg:fixed top-32 right-72 md:hidden hidden lg:flex flex-col gap-2">
@@ -73,7 +75,7 @@ export function BlogcardTemplate({ details }: Icard) {
   return (
     <>
       <Link to={"/" + details.link} className="md:flex hidden justify-center items-center">
-        <section className="md:w-full w-3/4 h-full justify-center items-center ">
+        <section className="md:w-1/2 w-3/4 h-full justify-center items-center ">
           <div className="flex dark:hover:bg-everNav p-2 flex-1 rounded-md hover:bg-slate-200 transition ease-in-out dalay-150  flex-col w-72 gap-2 font-Quicksand ">
             <div>
               <img
@@ -99,7 +101,7 @@ export function BlogcardTemplate({ details }: Icard) {
 
       <section className="flex md:hidden border border-slate-600 rounded-md ">
         <Link to={"/" + details.link}>
-          <section className="flex">
+          <section className="flex backdrop-blur-lg">
             <div className="flex p-2 gap-4">
               <div className="flex justify-center items-center">
                 <img src={"/" + details.imgsrc} alt="image blog" className="w-56 rounded-md" />
@@ -127,5 +129,24 @@ export function Image({ imagelink }: Iimage) {
     <div className="w-fit p-3 lg:p-0 md:p0">
       <img src={"/" + imagelink} alt="" />
     </div>
+  );
+}
+interface Icode {
+  codeblock: string
+  lang: string
+
+}
+export function CodeBlockDemo({ codeblock, lang }: Icode) {
+  return (
+    <CodeBlock code={codeblock} language={lang}>
+      <CodeBlock.Code className="bg-gray-900 p-6 rounded-xl shadow-lg overflow-auto text-sm">
+        <div className="table-row">
+          <CodeBlock.LineNumber className="table-cell pr-4 text-sm text-gray-500 text-right select-none" />
+          <CodeBlock.LineContent className="table-cell">
+            <CodeBlock.Token />
+          </CodeBlock.LineContent>
+        </div>
+      </CodeBlock.Code>
+    </CodeBlock>
   );
 }

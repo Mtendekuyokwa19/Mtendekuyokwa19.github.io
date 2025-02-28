@@ -116,7 +116,7 @@ function Avatar() {
         {/* </div> */}
 
         <div className="flex justify-center items-baseline gap-1">
-          <p className="font-Alfa text-2xl">Mtende</p>
+          <p className="font-Alfa text-2xl  ">Mtende</p>
 
           <div className="font-Alfa rounded-full bg-green-700 w-2 h-2 text-2xl">
           </div>
