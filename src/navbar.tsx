@@ -79,7 +79,8 @@ function Menu({ tooglemodal }: Imenu) {
 }
 function HeaderMenu({ tooglemodal }: Iheadermenu) {
   return (
-    <div className="flex w-full bg-catNav  sticky top-0 p-4 sm:justify-evenly md:justify-evenly justify-between dark:bg-stone-900 ">
+    <div className="flex w-full bg-catNav z-40
+      sticky top-0 p-4 sm:justify-evenly md:justify-evenly justify-between dark:bg-stone-900 ">
       <Avatar />
       <div className="lg:flex md:flex hidden font-JetBrains font-bold gap-8 relative right-11 justify-center items-center">
         <Link to="/" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Blog</p></Link>
