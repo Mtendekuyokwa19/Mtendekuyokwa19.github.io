@@ -34,7 +34,7 @@ export const BlogPost = () => {
           />
         </div>
         <P>
-          I have been following closely on a bunch of updates on (neo)vim related and just wanted to air out the cool stuff I discovered.
+          I have been following closely on a bunch of updates of (neo)vim related and just wanted to air out the cool stuff I discovered.
           This type of blog post format/style has been inspired by some VC, <A link="https://chamath.substack.com/">chamath </A>. I kinda liked the format to be honest.
           Out of the all the reads, I will simply pull out the neovim related ones from the noise because thats what tickles my wits.
         </P>
