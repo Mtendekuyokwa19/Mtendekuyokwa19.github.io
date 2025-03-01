@@ -5,7 +5,7 @@ import { A } from "./whyNeovim.tsx"
 
 export function WhatIread() {
   return (
-    <section className=" flex justify-center w-fit">
+    <section className=" flex justify-center ">
       <BlogPost />
       <TableOfContents content={["Understanding lsps", "vim's sister", "Golden config", "Chris & Thiago"]} />
     </section>
@@ -19,7 +19,7 @@ export const BlogPost = () => {
   vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#FB508F", bold = true })
  `
   return (
-    <div className="flex items-center p-3 flex-col gap-4 lg:w-3/4 md:w-3/4">
+    <div className="flex w-screen items-center p-4 flex-col gap-4 lg:w-3/4 md:w-3/4">
       <H>What I read, this week</H>
       <div className="lg:w-1/2 flex ">
         <Avatar date="28 February, 2025" />
@@ -63,11 +63,14 @@ export const BlogPost = () => {
 
           I added  cool new config lines to my init.lua and I have been enjoying it. The config lines work with mostly relative numbers where the colors of the lines are independent from theme.
           The line above the current cursor line are blue and the ones below are pink. This improves visual ability to jump around using line numbers as some themes make the line colors super dim
-          <CodeBlockDemo lang="js" codeblock={code} />
 
 
         </P>
+        <div className="overflow-x-auto w-screen md:w-11/12 md:p-4 justify-center items-center flex ">
 
+
+          <CodeBlockDemo lang="javascript" code={code} />
+        </div>
         <P>
           <H2 id="Chris & Thiago">Chris and thiago</H2>
 

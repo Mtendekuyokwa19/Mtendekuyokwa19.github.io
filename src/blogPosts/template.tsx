@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-
 import { CodeBlock } from 'react-code-block';
-
 export function TableOfContents({ content }: ITOC) {
   return (
     <div className="lg:fixed top-32 right-72 md:hidden hidden lg:flex flex-col gap-2">
@@ -132,20 +130,33 @@ export function Image({ imagelink }: Iimage) {
   );
 }
 interface Icode {
-  codeblock: string
+  code: string
   lang: string
 
 }
-export function CodeBlockDemo({ codeblock, lang }: Icode) {
+// export function CodeBlockDemo({ codeblock, lang }: Icode) {
+//   return (
+//     <section className="w-1/2 md:w-3/4 inline ">
+//       <CodeBlock code={codeblock} language={lang} >
+//         <CodeBlock.Code className="bg-gray-900 p-6 rounded-xl shadow-lg overflow-auto text-sm">
+//           <div className="table-row">
+//             <CodeBlock.LineNumber className="table-cell pr-4 text-sm text-gray-500 text-right select-none" />
+//             <CodeBlock.LineContent className="table-cell">
+//               <CodeBlock.Token />
+//             </CodeBlock.LineContent>
+//           </div>
+//         </CodeBlock.Code>
+//       </CodeBlock>
+//     </section>
+//   );
+// }
+export function CodeBlockDemo({ code, lang }: Icode) {
   return (
-    <CodeBlock code={codeblock} language={lang}>
-      <CodeBlock.Code className="bg-gray-900 p-6 rounded-xl shadow-lg overflow-auto text-sm">
-        <div className="table-row">
-          <CodeBlock.LineNumber className="table-cell pr-4 text-sm text-gray-500 text-right select-none" />
-          <CodeBlock.LineContent className="table-cell">
-            <CodeBlock.Token />
-          </CodeBlock.LineContent>
-        </div>
+    <CodeBlock code={code} language={lang}>
+      <CodeBlock.Code className="bg-gray-900 md:overflow-x-auto p-6 rounded-xl shadow-lg">
+        <CodeBlock.LineContent>
+          <CodeBlock.Token />
+        </CodeBlock.LineContent>
       </CodeBlock.Code>
     </CodeBlock>
   );

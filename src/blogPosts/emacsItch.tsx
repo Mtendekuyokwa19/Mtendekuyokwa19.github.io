@@ -130,7 +130,7 @@ export function H({ children }: Hprops) {
 }
 export function P({ children }: Hprops) {
   return (
-    <div className="text-slate-700  text-justify lg:text-md font-mono text-md px-3 dark:text-slate-400">
+    <div className="text-slate-700  text-justify lg:text-md font-Quicksand text-md px-3 dark:text-slate-400">
       <p>{children}</p>
     </div>
   );

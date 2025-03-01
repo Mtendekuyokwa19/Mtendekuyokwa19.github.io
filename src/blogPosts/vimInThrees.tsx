@@ -80,7 +80,6 @@ export const BlogPost = () => {
         </P>
         <div className="text-slate-300 flex p-4 md:p-0 lg:p-4 rounded flex-col items-center bg-slate-950 ">
 
-
           <code>
 
             map("n", "M-k", ":m .-2CR")
