@@ -152,12 +152,15 @@ interface Icode {
 // }
 export function CodeBlockDemo({ code, lang }: Icode) {
   return (
-    <CodeBlock code={code} language={lang}>
-      <CodeBlock.Code className="bg-gray-900 overflow-x-auto p-6 rounded-xl shadow-lg">
-        <CodeBlock.LineContent>
-          <CodeBlock.Token />
-        </CodeBlock.LineContent>
-      </CodeBlock.Code>
-    </CodeBlock>
+
+    <div className="overflow-x-auto w-screen md:w-11/12 md:p-4 justify-center items-center flex ">
+      <CodeBlock code={code} language={lang}>
+        <CodeBlock.Code className="bg-gray-900 overflow-x-auto p-6 rounded-xl shadow-lg">
+          <CodeBlock.LineContent>
+            <CodeBlock.Token />
+          </CodeBlock.LineContent>
+        </CodeBlock.Code>
+      </CodeBlock>
+    </div>
   );
 }

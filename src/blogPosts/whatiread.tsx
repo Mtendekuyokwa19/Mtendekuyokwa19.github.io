@@ -66,11 +66,9 @@ export const BlogPost = () => {
 
 
         </P>
-        <div className="overflow-x-auto w-screen md:w-11/12 md:p-4 justify-center items-center flex ">
 
 
-          <CodeBlockDemo lang="javascript" code={code} />
-        </div>
+        <CodeBlockDemo lang="javascript" code={code} />
         <P>
           <H2 id="Chris & Thiago">Chris and thiago</H2>
 
