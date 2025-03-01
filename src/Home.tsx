@@ -1,6 +1,7 @@
 import { BlogcardTemplate, Card } from "./blogPosts/template.tsx"
 import {
   IoLogoDiscord,
+  IoLogoLinkedin,
   IoLogoMedium,
   IoLogoTwitter,
   // IoSearch,
@@ -42,8 +43,8 @@ export function Footer() {
           </div>
 
           <div>
-            <a href="https://medium.com/@mtendekuyokwa19">
-              <IoLogoMedium size={20} />
+            <a href="https://www.linkedin.com/in/mtende-kuyokwa-a71a60241/">
+              <IoLogoLinkedin size={20} />
             </a>
           </div>
 

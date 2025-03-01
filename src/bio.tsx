@@ -15,7 +15,10 @@ export function Bio() {
 
         <Miscellenous />
         <Databases />
+
       </section>
+
+      <OSS />
     </article>
   )
 }
@@ -26,7 +29,7 @@ function Header() {
   return (
     <section className="lg:w-1/2 lg:mt-24 mt-12 " >
       <H2 >Mtende Kuyokwa</H2>
-      <section className="font-mono text-sm lg:text-md text-left text-slate-700 dark:text-slate-500 ">
+      <section className="font-mono text-sm lg:text-md text-left text-slate-700 dark:text-slate-400 ">
 
         <p> I am a college student at the Malawi university of business and applied science, studying Information Technology.</p>
         <p>(Neo)vim has been one of my latest obsession in the sea of technology. Outside web software I have worked on robots at RoboticsFoundationMalawi</p>
@@ -35,6 +38,32 @@ function Header() {
       </section>
     </section>
   )
+}
+
+function OSS() {
+  const languagegrp1 = ["React-router", "Zengm games", "Neovim(design)", "Pawapay api w/ Joel fikson"]
+
+  let position = 0
+  return (
+
+    <section className="w-1/2" >
+
+      <H2 >OSS contribution</H2>
+
+      <section className="font-mono text-left text-slate-500 flex gap-8 ">
+        <div>
+          {languagegrp1.map(language => {
+            position++
+            return <Language language={language} position={position} />
+          }
+          )
+          }
+        </div>
+
+      </section>
+    </section>
+  )
+
 }
 function Databases() {
   const languagegrp1 = ["Postgres", "MySQL"]

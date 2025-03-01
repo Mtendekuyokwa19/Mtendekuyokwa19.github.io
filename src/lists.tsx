@@ -80,7 +80,7 @@ interface ILanguage {
 export function Language({ language, position }: ILanguage) {
   return (<section className="flex text-sm lg:text-md gap-2">
     <p className="text-slate-700 lg:text-md text-sm">{"0" + position + "."}</p>
-    <p className="text-slate-800 dark:text-slate-500 text-sm lg:text-md">{language}</p>
+    <p className="text-slate-800 dark:text-slate-400 text-sm lg:text-md">{language}</p>
   </section>)
 
 
