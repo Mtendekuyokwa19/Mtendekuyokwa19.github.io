@@ -97,7 +97,7 @@ export function BlogcardTemplate({ details }: Icard) {
         </section >
       </Link >
 
-      <section className="flex md:hidden border border-slate-600 rounded-md ">
+      <section className="flex md:hidden border-3 border-slate-600 rounded-md ">
         <Link to={"/" + details.link}>
           <section className="flex backdrop-blur-lg">
             <div className="flex p-2 gap-4">
