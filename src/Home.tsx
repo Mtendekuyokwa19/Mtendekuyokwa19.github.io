@@ -13,7 +13,7 @@ const emacsitch = new Card("emacsitch", "emacs.png", "The emacs itch? ", "A rant
 
 const worldandvim = new Card("theworldmigratestoneovim", "woman.jpg", "The world migrates to neovim", "why the world will soon move to neovim. Explaining how you are playing a part", "Neovim", "green", 1.2, "Jan 18")
 const viminthrees = new Card("viminthrees", "preview2.png", "Vim in threes", "A dive into workflows, tricks and zellij,the multiplexer", "Neovim", "green", 1.2, "Jan 24")
-const whatiread = new Card("whatiread", "whatiread.webp", "what I read this week", "a simple evaluation of cool reads of the week", "Neovim", "green", 1, "Jan 24")
+const whatiread = new Card("whatiread", "whatiread.webp", "what I read this week", "a simple evaluation of cool reads of the week", "Neovim", "green", 1, "Feb 28")
 export default function Home() {
   const postcards = [whatiread, valentine, emacsitch, viminthrees, worldandvim]
   return (
