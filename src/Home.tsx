@@ -2,7 +2,6 @@ import { BlogcardTemplate, Card } from "./blogPosts/template.tsx"
 import {
   IoLogoDiscord,
   IoLogoLinkedin,
-  IoLogoMedium,
   IoLogoTwitter,
   // IoSearch,
 } from "react-icons/io5";
