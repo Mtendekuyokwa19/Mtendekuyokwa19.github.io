@@ -18,7 +18,9 @@ export function Bio() {
 
       </section>
 
-      <OSS />
+      <section className="lg:flex justify-between w-full lg:w-1/2">
+        <OSS />
+      </section>
     </article>
   )
 }
