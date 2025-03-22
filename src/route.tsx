@@ -10,6 +10,7 @@ import { Bio } from "./bio.tsx";
 import { Lists } from "./lists.tsx";
 import { VimAfterlife } from "./blogPosts/vimtheafterlife.tsx";
 import { WhatIread } from "./blogPosts/whatiread.tsx";
+import { NeovimPage } from "./neovim.tsx";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
 
       { path: "bio", element: <Bio /> },
+      { path: "neovim", element: <NeovimPage /> },
 
       { path: "list", element: <Lists /> },
       { path: "vimafterlife", element: <VimAfterlife /> },
@@ -27,5 +29,6 @@ export const router = createBrowserRouter([
       { path: "whatiread", element: <WhatIread /> }
       , { path: "emacsitch", element: <EmacsItch /> }
     ],
+
   },
 ]);
