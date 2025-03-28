@@ -70,6 +70,7 @@ function Menu({ tooglemodal }: Imenu) {
           <Link to="/" onClick={tooglemodal} ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Blog</p></Link>
           <Link to="/list" onClick={tooglemodal} ><p className="text-lg dark:hover:text-stone-300">Lists</p></Link>
           <Link to="/bio" onClick={tooglemodal} ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Bio</p></Link>
+          <Link to="/neovim" onClick={tooglemodal} ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Links</p></Link>
         </div>
 
 
@@ -87,6 +88,7 @@ function HeaderMenu({ tooglemodal }: Iheadermenu) {
         <Link to="/" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Blog</p></Link>
         <Link to="/list" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Lists</p></Link>
         <Link to="/bio" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Bio</p></Link>
+        <Link to="/neovim" ><p className="text-lg hover:text-stone-600 dark:hover:text-stone-300">Links</p></Link>
       </div>
 
       <div className="flex gap-4 justify-center items-center">
