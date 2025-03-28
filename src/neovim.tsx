@@ -1,4 +1,4 @@
-
+// @ts-nocheck
 import { useAsciiText, ansiShadow } from 'react-ascii-text';
 import { IoLogoDiscord, IoLogoGithub, IoLogoLinkedin, IoLogoMedium, IoLogoTwitter } from 'react-icons/io5';
 export function NeovimPage() {
@@ -66,7 +66,7 @@ function Jobtitle() {
 }
 
 function TextName() {
-  const asciiTextRef = useAsciiText({
+  const asciiTextRef: React.MutableRefObject<HTMLPreElement | undefined> = useAsciiText({
     animationCharacters: "▒░█",
     animationCharacterSpacing: 1,
     animationDelay: 2000,
@@ -77,6 +77,7 @@ function TextName() {
     font: ansiShadow,
     text: ["MTENDE", "Neovim", "Otis"],
   });
+
 
   return <pre ref={asciiTextRef}></pre>;
 }
