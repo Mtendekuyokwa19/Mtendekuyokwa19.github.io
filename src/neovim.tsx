@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { useAsciiText, ansiShadow } from 'react-ascii-text';
 import { IoLogoDiscord, IoLogoGithub, IoLogoLinkedin, IoLogoMedium, IoLogoTwitter } from 'react-icons/io5';
+import { SiArchlinux, SiGit, SiTypescript } from 'react-icons/si';
 export function NeovimPage() {
   return (
     <section>
@@ -17,7 +18,7 @@ export function NeovimPage() {
 
 export function Siderline() {
   const tildes = []
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 27; i++) {
     tildes.push(<p>~</p>)
   }
   return (
@@ -33,7 +34,7 @@ export function Siderline() {
 
 export function HeaderTag() {
   return (
-    <section className="flex-1 w-2/3">
+    <section className="flex-1 flex gap-2 flex-col w-2/3 ">
       <Headername />
       <Jobtitle />
       <LinksToSites />
@@ -52,11 +53,12 @@ export function Headername() {
 }
 function Jobtitle() {
   return (
-    <section className='flex justify-center items-center  px-8 py-4 '>
-      <section className='flex text-black font-JetBrains text-2xl  justify-center items-center bg-[#7287fd] px-4 py-2 '>
+    <section className='flex justify-center items-center  md:px-8 md:py-4 '>
+      <section className='flex text-black font-JetBrains text-md md:text-2xl  justify-center items-center bg-[#7287fd] px-4 py-2 '>
 
 
-        <p>Information Technology student @ MUBAS</p>
+        <p className='hidden md:inline'>Information Technology student @ MUBAS</p>
+        <p className='inline md:hidden'>IT student @ MUBAS</p>
       </section>
 
     </section>
@@ -70,7 +72,7 @@ function TextName() {
     animationCharacters: "▒░█",
     animationCharacterSpacing: 1,
     animationDelay: 2000,
-    animationDirection: "down",
+    animationDirection: "right",
     animationInterval: 100,
     animationLoop: true,
     animationSpeed: 50,
@@ -78,8 +80,18 @@ function TextName() {
     text: ["MTENDE", "Neovim", "Otis"],
   });
 
+  const asciiTextRef2 = useAsciiText({
+    font: ansiShadow,
+    text: "Otis",
+  });
 
-  return <pre ref={asciiTextRef}></pre>;
+  return (
+    <>
+
+      <pre className='flex md:hidden' ref={asciiTextRef2}></pre>
+      <pre className='hidden md:block' ref={asciiTextRef}></pre>
+    </>
+  )
 }
 
 function LinksToSites() {
@@ -93,16 +105,28 @@ function LinksToSites() {
 
   return (
     <section className='flex flex-col gap-4 font-JetBrains'>
-      {links.map(link => <section className='flex justify-evenly items-center text-xl px-12 '><a href={link.link} className='flex w-2/6   items-center justify-between'> <div className='flex gap-2'>{link.svg} <p className='capitalize text-[#6c6f85]'>{link.name}</p> </div> <p className='text-[#b5bfe2] '>{link.shorthand}</p> </a></section>)}
+      {links.map(link => <section className='flex justify-evenly items-center text-xl md:px-12 px-3 '><a href={link.link} className='flex md:w-2/6 w-full  items-center justify-between'> <div className='flex gap-2'>{link.svg} <p className='capitalize text-[#6c6f85]'>{link.name}</p> </div> <p className='text-[#b5bfe2] '>{link.shorthand}</p> </a></section>)}
     </section>
   )
 }
 function Lualine() {
 
   return (
-    <section className='w-full'>
-      hello
-
+    <section className='font-JetBrains text-white w-full md:flex hidden justify-between bg-stone-900   items-center'>
+      <div className='flex gap-2 items-center bg-blue-400 px-4'>
+        <p className=' uppercase text-black font-bold'>normal</p>
+        <div className='bg-gray-700 flex gap-2 justify-center py-2 px-2 items-center'><SiGit /> <p>master</p></div>
+        <p className='text-black font-mono'>mtende.tsx</p>
+      </div>
+      <div className='flex gap-2 px-2  items-center   justify-between '>
+        <p>utf-8 |</p>
+        <SiArchlinux />
+        <div className='flex justify-center items-center gap-2'><p>|</p> <SiTypescript /> <p>|</p></div>
+        <p>Top</p>
+        <div className=' flex-1 h-full'>
+          <p>1:1</p>
+        </div>
+      </div>
     </section>
   )
 }
