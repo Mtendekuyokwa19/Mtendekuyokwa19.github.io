@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { useEffect } from 'react'
 import { useAsciiText, ansiShadow } from 'react-ascii-text';
 import { IoLogoDiscord, IoLogoGithub, IoLogoLinkedin, IoLogoMedium, IoLogoTwitter } from 'react-icons/io5';
 import { SiArchlinux, SiGit, SiTypescript } from 'react-icons/si';
@@ -19,7 +20,7 @@ export function NeovimPage() {
 export function Siderline() {
   const tildes = []
   for (let i = 0; i < 27; i++) {
-    tildes.push(<p>~</p>)
+    tildes.push(<p className='text-sm md:text-md'>~</p>)
   }
   return (
     <section className="flex  flex-col items-stretch h-full ">
@@ -95,17 +96,44 @@ function TextName() {
 }
 
 function LinksToSites() {
+
+  const size = 20;
   const links = [
-    { name: "github", svg: <IoLogoGithub size={28} />, shorthand: "ggh", link: "https://github.com/Mtendekuyokwa19" },
-    { name: "linkedin", svg: <IoLogoLinkedin size={28} />, shorthand: "ggl", link: "https://www.linkedin.com/in/mtende-kuyokwa-a71a60241/" },
-    { name: "twitter/x", svg: <IoLogoTwitter size={28} />, shorthand: "ggt", link: "https://x.com/mtende_kuyokwa" },
-    { name: "Medium", svg: <IoLogoMedium size={28} />, shorthand: "ggm", link: "https://medium.com/@mtendekuyokwa19" },
-    { name: "discord", svg: <IoLogoDiscord size={28} />, shorthand: "ggm", link: "https://discord.com/users/1178601817899282602" }
+    { name: "github", svg: <IoLogoGithub size={size} />, shorthand: "h", link: "https://github.com/Mtendekuyokwa19" },
+    { name: "linkedin", svg: <IoLogoLinkedin size={size} />, shorthand: "l", link: "https://www.linkedin.com/in/mtende-kuyokwa-a71a60241/" },
+    { name: "twitter/x", svg: <IoLogoTwitter size={size} />, shorthand: "t", link: "https://x.com/mtende_kuyokwa" },
+    { name: "Medium", svg: <IoLogoMedium size={size} />, shorthand: "m", link: "https://medium.com/@mtendekuyokwa19" },
+    { name: "discord", svg: <IoLogoDiscord size={size} />, shorthand: "d", link: "https://discord.com/users/1178601817899282602" }
   ]
 
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.key === 'h') {
+        window.open(links[0].link)
+      }
+      else if (e.key === 't') {
+        window.open(links[1].link)
+      }
+      else if (e.key === 'l') {
+
+        window.open(links[2].link)
+      }
+      else if (e.key === 'm') {
+
+        window.open(links[3].link)
+      }
+      else if (e.key === 'd') {
+
+        window.open(links[4].link)
+      }
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [])
   return (
     <section className='flex flex-col gap-4 font-JetBrains'>
-      {links.map(link => <section className='flex justify-evenly items-center text-xl md:px-12 px-3 '><a href={link.link} className='flex md:w-2/6 w-full  items-center justify-between'> <div className='flex gap-2'>{link.svg} <p className='capitalize text-[#6c6f85]'>{link.name}</p> </div> <p className='text-[#b5bfe2] '>{link.shorthand}</p> </a></section>)}
+      {links.map(link => <div tabIndex={0} className='flex justify-evenly items-center text-xl md:px-12 px-3 '><a href={link.link} className='flex md:w-2/6 w-full  items-center justify-between'> <div className='flex gap-2 justify-center items-center'>{link.svg} <p className='capitalize text-[#6c6f85] text-sm md:text-md'>{link.name}</p> </div> <p className='text-[#b5bfe2] text-sm md:text-md'>{link.shorthand}</p> </a></div>)}
     </section>
   )
 }
