@@ -120,7 +120,7 @@ type Hprops = {
 export function H({ children }: Hprops) {
   return (
     <section id="viminthrees" className="flex gap-2 rounded-md flex-col items-center">
-      <h1 className="font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-xl">
+      <h1 className="capitalize font-JetBrains font-extrabold lg:text-4xl md:text-2xl text-xl">
 
         {children}
       </h1>

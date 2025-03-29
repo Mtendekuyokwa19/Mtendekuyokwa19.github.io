@@ -153,9 +153,9 @@ interface Icode {
 export function CodeBlockDemo({ code, lang }: Icode) {
   return (
 
-    <div className="overflow-x-auto w-screen md:w-11/12 md:p-4 justify-center items-center flex ">
+    <div className="overflow-x-auto w-screen md:w-11/12 md:px-4 justify-center items-center flex ">
       <CodeBlock code={code} language={lang}>
-        <CodeBlock.Code className="bg-gray-900 overflow-x-auto p-6 rounded-xl shadow-lg">
+        <CodeBlock.Code className="bg-gray-900 flex-1 overflow-x-auto p-6 rounded-xl shadow-lg">
           <CodeBlock.LineContent>
             <CodeBlock.Token />
           </CodeBlock.LineContent>

@@ -1,9 +1,6 @@
 # Mtende's blog
 
 This is the site where I write my personal blogs. The writings here are simply my thoughts and in no way a reflection of anyone I am associated with.
-
-
-
 ## Tech stack
 1. react
 2. vite

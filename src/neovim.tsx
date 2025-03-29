@@ -133,7 +133,7 @@ function LinksToSites() {
   }, [])
   return (
     <section className='flex flex-col gap-4 font-JetBrains'>
-      {links.map(link => <div tabIndex={0} className='flex justify-evenly items-center text-xl md:px-12 px-3 '><a href={link.link} className='flex md:w-2/6 w-full  items-center justify-between'> <div className='flex gap-2 justify-center items-center'>{link.svg} <p className='capitalize text-[#6c6f85] text-sm md:text-md'>{link.name}</p> </div> <p className='text-[#b5bfe2] text-sm md:text-md'>{link.shorthand}</p> </a></div>)}
+      {links.map(link => <div tabIndex={0} className='flex justify-evenly items-center text-xl md:px-12 px-3 '><a href={link.link} className='flex md:w-2/6 w-full  items-center justify-between'> <div className='flex gap-2 justify-center items-center'>{link.svg} <p className='capitalize text-[#6c6f85] text-sm md:text-md'>{link.name}</p> </div> <p className='dark:text-[#b5bfe2] text-slate-700 text-sm md:text-md '>{link.shorthand}</p> </a></div>)}
     </section>
   )
 }
