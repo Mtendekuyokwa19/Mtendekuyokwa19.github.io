@@ -12,6 +12,7 @@ import { VimAfterlife } from "./blogPosts/vimtheafterlife.tsx";
 import { WhatIread } from "./blogPosts/whatiread.tsx";
 import { NeovimPage } from "./neovim.tsx";
 import { ManPages } from "./blogPosts/manpages.tsx";
+import { Intermidiate } from "./blogPosts/intemediatejumps.tsx";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
       { path: "bio", element: <Bio /> },
       { path: "neovim", element: <NeovimPage /> },
       { path: "manpages", element: <ManPages /> },
+      { path: "intermidiate", element: <Intermidiate /> },
 
       { path: "list", element: <Lists /> },
       { path: "vimafterlife", element: <VimAfterlife /> },

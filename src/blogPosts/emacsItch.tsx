@@ -114,7 +114,7 @@ export const BlogPost = () => {
     </div>
   );
 };
-type Hprops = {
+export type Hprops = {
   children: ReactNode;
 };
 export function H({ children }: Hprops) {
