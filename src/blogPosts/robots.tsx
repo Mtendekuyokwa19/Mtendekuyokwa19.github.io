@@ -40,7 +40,7 @@ export const BlogPost = () => {
 
         </P>
         <P>
-          <H2 id="Exploring the man">Neovim not vim</H2>
+          <H2 id="Neovim not vim">Neovim not vim</H2>
 
           After sudo upgrading the piOS, I installed Neovim even though vim was avalaible. I did this for the pettiest reason, neovim has a change in cursor shape for insert and normal mode. I am a simple man and this is all I wanted.
         </P>
@@ -52,7 +52,7 @@ export const BlogPost = () => {
 
 
         <P>
-          <H2 id="Purists and community">ssh as ssshhh</H2>
+          <H2 id="ssh as ssshhh">ssh as ssshhh</H2>
           I learnt some cool things about ssh-ing into computers.  It was fun when I set it up and had to use it with Windows.
           I was using a Windows computer in its vanilla form, no wsl, and managed to ssh in my pi3.         </P>
         <P>Having installed neovim, I used it as the editor in the terminal/cmd and it was weird how I could not use my mouse to switch between my terminal-windows. Luckily, my so not-almighty brain
@@ -60,7 +60,7 @@ export const BlogPost = () => {
         </P>
         <P>
 
-          <H2 id="Kitty litter">vanilla vim</H2>
+          <H2 id="vanilla vim">vanilla vim</H2>
 
           This windows-vim experience made me realise that I could use Vim without any plugins and still be OK. In late March and early April, I read the Vim user manual. This paid a thousandfold when I was using nvim from
           a Raspberry Pi SSH port. I managed to get window splitting in Windows cmd and it was the coolest thing.
