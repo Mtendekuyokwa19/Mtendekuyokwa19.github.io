@@ -16,16 +16,17 @@ const viminthrees = new Card("viminthrees", "preview2.png", "Vim in threes", "A 
 const whatiread = new Card("whatiread", "whatiread.webp", "what I read this week", "a simple evaluation of cool reads of the week", "Neovim", "green", 1, "Feb 28")
 const manpages = new Card("manpages", "manpages.webp", "Read the man pages pt.1", "Following the instructions of purists. User-manual is peak documentation", "Neovim", "green", 1, "Mar 29")
 const intermediate = new Card("intermidiate", "intermediate.jpg", "intermediate navigation in vim", "Exploring the user-manual so that I master vim navigation", "Neovim", "green", 2, "Apr 7")
+const robotics = new Card("robotics", "robots.webp", "vim in robotics", "Playing with microcontrollers for the first time", "Robotics", "green", 2, "Apr 27")
 
 export default function Home() {
-  const postcards = [intermediate, manpages, whatiread, valentine, emacsitch, viminthrees, worldandvim]
+  const postcards = [robotics, intermediate, manpages, whatiread, valentine, emacsitch, viminthrees, worldandvim]
   return (
     <div className="md:min-h-lvh lg:min-h-lvh">
 
       <section className="md:p-4 w-auto my-4 md:my-0 flex flex-col  items-center">
         <H2 id={""}>All Posts.</H2>
         <div className="lg:gap-y-10 p-2 md:p-0 w-screen md:w-8/12 gap-5 lg:grid md:flex md:gap-2 grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-2 md:py-3 sm:py-9 flex flex-col">
-          {postcards.map(card => <BlogcardTemplate details={card} />)}
+          {postcards.map(card => <BlogcardTemplate details={card} key={card.title} />)}
 
         </div>
       </section>

@@ -83,7 +83,7 @@ export function BlogcardTemplate({ details }: Icard) {
               />
             </div>
             <div className=" flex flex-col gap-1">
-              <div className={`bg-${details.tagColor}-700 font-JetBrains rounded-full flex justify-center items-center w-20 text-white text-sm`}>
+              <div className={`bg-${details.tagColor}-700 font-JetBrains rounded-full flex justify-center items-center w-20 text-white text-sm`.toString()}>
                 <p>{details.tagTitle}</p>
               </div>
               <h2 className="font-bold text-xl">{details.title}</h2>
